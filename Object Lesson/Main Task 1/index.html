@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Billionaire Tax Facts</title>
+</head>
+<body>
+
+	<h1>Choose a billionaire to find out how much tax they pay:</h1>
+
+	<select id="billionaireSelector" onchange="updateDisplayedTaxInfo()">
+		<option>Montgomery Burns</option>
+		<option>Mr Moneybags</option>
+		<option>Dr Evil</option>
+		<option>Jeff Bezos</option>
+	</select>
+
+	<h2 id="billionaireName"></h2>
+
+	<p>Total income for 2019: $<span id="totalIncome"></span> </p>
+
+	<p>Income tax paid 2019: $<span id="taxPaid"></span> </p>
+
+	<p>Percentage of income paid as tax: <span id="taxAsPercentage"></span>% </p>
+
+	<script type="text/javascript" src="taxdata.js"></script>
+	<script type="text/javascript" src="taxinfocontroller.js"></script>
+
+</body>
+</html>
